@@ -1,6 +1,14 @@
 function computeSumBetween(num1, num2) {
     // your code here
-
+    if (num1>num2) {
+        return 0;
+    } else {
+        let pr=0;
+        for (let i = num1; i < num2; i++) {
+            pr+=i;
+        }
+        return pr;
+    }
 }
 
 let output = computeSumBetween(2, 5);

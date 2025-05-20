@@ -1,6 +1,13 @@
 function getLengthOfShortestElement(arr) {
     // your code here
-    
+    if (arr.length===0 || !Array.isArray(arr)) return 0;
+    let l=300;
+    for (let i = 0; i < arr.length; i++) {
+         if (arr[i].length<l) {
+            l= arr[i].length;
+         }    
+    }
+    return l;
 }
 
 let output = getLengthOfShortestElement(['one', 'two', 'three']);
